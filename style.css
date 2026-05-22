@@ -96,34 +96,40 @@ h1, h2, h3, h4, .logo, .btn {
 
 /* ========== HERO SECTION ========== */
 .hero {
-  background-size: cover;
-  background-position: center;
-  min-height: 85vh;
+  position: relative;
+  height: 80vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
-}
-.hero-overlay {
-  position: absolute;
-  top:0; left:0; width:100%; height:100%;
-  background: rgba(0,0,0,0.6);
 }
 .hero-content {
   position: relative;
-  color: var(--white);
-  max-width: 800px;
-  margin: 0 auto;
   z-index: 2;
+  color: var(--white);
 }
 .hero h1 {
-  font-size: 3.2rem;
-  margin-bottom: 1rem;
+  font-size: 2.8rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
 }
-
+.hero-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* ========== BUTTONS (Blue & White) ========== */
 .btn {
   display: inline-block;
